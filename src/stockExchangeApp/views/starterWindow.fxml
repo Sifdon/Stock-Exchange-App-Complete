@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stockExchangeApp.controllers.Controller">
+  <tabs>
+    <Tab text="StockExchange">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#908b8b" layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StockEx">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+                  <Pane fx:id="assetPane" layoutX="504.0" layoutY="30.0" prefHeight="290.0" prefWidth="338.0" />
+                  <Text layoutX="20.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Add new objects via Control Panel&#10;2. Start simulation using START button&#10;3. Pause simulation using STOP button&#10;&#10;" wrappingWidth="232.0693359375" />
+                  <Button fx:id="start" layoutX="29.0" layoutY="162.0" mnemonicParsing="false" onAction="#onStart" text="Start" />
+                  <Button fx:id="stop" layoutX="113.0" layoutY="162.0" mnemonicParsing="false" onAction="#onStop" text="Stop" />
+                  <CheckBox fx:id="multiAsset" layoutX="300.0" layoutY="335.0" mnemonicParsing="false" onAction="#onMultiAsset" text="Multi Asset Chart Mode" />
+                  <Button fx:id="showChart" layoutX="494.0" layoutY="331.0" mnemonicParsing="false" onAction="#onShowChart" text="Show Chart" />
+                  <TextField fx:id="savingFileName" layoutX="30.0" layoutY="204.0" />
+                  <Button fx:id="serializeButton" layoutX="30.0" layoutY="246.0" mnemonicParsing="false" onAction="#onSerialize" text="Serialize" />
+                  <TextField fx:id="loadingFileName" layoutX="30.0" layoutY="286.0" />
+                  <Button fx:id="deserializeButton" layoutX="36.0" layoutY="322.0" mnemonicParsing="false" onAction="#onDeserialize" text="Deserialize" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Control Panel">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="addNewComboBox" layoutX="39.0" layoutY="21.0" prefWidth="150.0" promptText="Add new..." />
+                  <Pane fx:id="formPane" layoutX="421.0" layoutY="23.0" prefHeight="321.0" prefWidth="215.0" />
+                  <Pane fx:id="objectsPane" layoutX="39.0" layoutY="65.0" prefHeight="272.0" prefWidth="217.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

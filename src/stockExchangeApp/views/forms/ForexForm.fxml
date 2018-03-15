@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="431.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="name" layoutX="187.0" layoutY="40.0" />
+        <Label layoutX="70.0" layoutY="45.0" text="Name" />
+        <Button layoutX="311.0" layoutY="318.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+        <Button layoutX="244.0" layoutY="318.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+        <Text fill="#757070f2" layoutX="62.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To add new Currency to Forex go to addNew -&gt; Currency" wrappingWidth="692.90869140625">
+            <font>
+                <Font name="Arial Italic" size="11.0" />
+            </font>
+        </Text>
+        <Pane fx:id="currenciesPane" layoutX="62.0" layoutY="117.0" prefHeight="192.0" prefWidth="335.0" />
+      <TextField fx:id="margin" layoutX="187.0" layoutY="82.0" />
+      <Label layoutX="66.0" layoutY="87.0" text="Margin" />
+    </children>
+</fx:root>

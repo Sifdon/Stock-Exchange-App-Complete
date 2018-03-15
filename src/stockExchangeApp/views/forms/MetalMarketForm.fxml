@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="378.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="name" layoutX="187.0" layoutY="40.0" />
+        <Label layoutX="70.0" layoutY="45.0" text="Name" />
+        <Button layoutX="311.0" layoutY="170.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+        <Button layoutX="244.0" layoutY="170.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+        <Text fill="#757070f2" layoutX="64.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To add new Metal to Market go to addNew -&gt; Metal" wrappingWidth="692.90869140625">
+            <font>
+                <Font name="Arial Italic" size="11.0" />
+            </font>
+        </Text>
+      <TextField fx:id="margin" layoutX="187.0" layoutY="80.0" />
+      <Label layoutX="70.0" layoutY="85.0" text="Margin" />
+      <Label layoutX="70.0" layoutY="126.0" text="Currency" />
+      <Label layoutX="187.0" layoutY="126.0" text="Zloty" />
+    </children>
+</fx:root>

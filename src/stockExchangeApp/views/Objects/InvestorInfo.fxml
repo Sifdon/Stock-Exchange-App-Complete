@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stockExchangeApp.controllers.objects.InvestorInfoController">
+   <children>
+      <Label layoutX="82.0" layoutY="159.0" prefHeight="27.0" prefWidth="95.0" text="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="249.0" prefHeight="27.0" prefWidth="123.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="249.0" prefHeight="27.0" prefWidth="95.0" text="Assets">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="159.0" prefHeight="27.0" prefWidth="95.0" text="Budget">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstNameLabel" layoutX="215.0" layoutY="164.0" text="Label" />
+      <Label fx:id="lastNameLabel" layoutX="215.0" layoutY="254.0" text="Label" />
+      <Label fx:id="budgetLabel" layoutX="451.0" layoutY="164.0" text="Label" />
+      <Label fx:id="walletSizeLabel" layoutX="451.0" layoutY="254.0" text="Label" />
+      <Button fx:id="deleteButton" layoutX="82.0" layoutY="308.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="50.0" prefWidth="192.0" style="-fx-background-color: red;" text="DELETE INVESTOR" />
+   </children>
+</AnchorPane>

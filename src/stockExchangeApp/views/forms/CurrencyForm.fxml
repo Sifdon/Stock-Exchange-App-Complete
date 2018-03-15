@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="378.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="70.0" layoutY="95.0" text="Country" />
+        <Button layoutX="301.0" layoutY="170.0" mnemonicParsing="false" onAction="#onAdd" text="Create" />
+        <Button layoutX="234.0" layoutY="170.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+      <Button layoutX="314.0" layoutY="125.0" mnemonicParsing="false" onAction="#onAddCountry" text="Add" />
+      <ComboBox fx:id="countriesComboBox" layoutX="189.0" layoutY="90.0" prefHeight="27.0" prefWidth="167.0" promptText="Select countries..." />
+      <TextField fx:id="name" layoutX="189.0" layoutY="40.0" />
+      <Label layoutX="70.0" layoutY="45.0" text="Name" />
+    </children>
+</fx:root>

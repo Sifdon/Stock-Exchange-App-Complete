@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="378.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="14.0" layoutY="45.0" text="Stock Exchange" />
+      <ComboBox fx:id="stockExchangeComboBox" layoutX="150.0" layoutY="40.0" prefHeight="27.0" prefWidth="204.0" promptText="Select Stock Exchange..." />
+      <ComboBox fx:id="conditionComboBox" layoutX="116.0" layoutY="133.0" prefHeight="27.0" prefWidth="239.0" promptText="Select membership conditon..." />
+        <Button fx:id="onAdd" layoutX="305.0" layoutY="306.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+        <Button layoutX="235.0" layoutY="306.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+        <Text fill="#757070f2" layoutX="52.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To add new StockExchange go to addNew -&gt; StockExchange" wrappingWidth="692.90869140625">
+            <font>
+                <Font name="Arial Italic" size="11.0" />
+            </font>
+        </Text>
+      <Pane fx:id="conditionPane" layoutX="23.0" layoutY="160.0" prefHeight="150.0" prefWidth="332.0">
+         <children>
+            <TextField fx:id="shareValueAbove" layoutX="179.0" layoutY="26.0" prefHeight="27.0" prefWidth="139.0" />
+            <Label fx:id="shareValueLabel" layoutX="6.0" layoutY="31.0" prefHeight="17.0" prefWidth="150.0" text="Share value above" />
+            <Label fx:id="companiesLabel" layoutX="6.0" layoutY="31.0" text="Companies" />
+            <Button fx:id="addToIndexButton" layoutX="171.0" layoutY="75.0" mnemonicParsing="false" onAction="#onAddToIndex" text="Add company to index" />
+            <ComboBox fx:id="companiesComboBox" layoutX="174.0" layoutY="26.0" prefWidth="150.0" promptText="Select company.." />
+         </children></Pane>
+      <Label fx:id="membershipLabel" layoutX="14.0" layoutY="138.0" text="Membership" />
+      <TextField fx:id="nameTextField" layoutX="137.0" layoutY="90.0" prefHeight="27.0" prefWidth="219.0" />
+      <Label layoutX="14.0" layoutY="95.0" text="Name" />
+    </children>
+</fx:root>

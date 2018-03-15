@@ -1,0 +1,16 @@
+Aluminium
+Copper
+Zinc
+Nickel
+Lead
+Tin
+Aluminium Alloy
+Aluminium Premiums
+Steel Rebar
+Steel Scrap
+Cobalt
+Molybdenum
+Gold
+Silver
+Palladium
+Platinum

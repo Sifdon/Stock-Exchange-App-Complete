@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="378.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="name" layoutX="187.0" layoutY="40.0" />
+        <TextField fx:id="firstName" layoutX="187.0" layoutY="80.0" />
+        <TextField fx:id="lastName" layoutX="187.0" layoutY="120.0" />
+        <Label layoutX="50.0" layoutY="45.0" text="Name" />
+        <Label layoutX="50.0" layoutY="85.0" text="Manager's First Name" />
+        <Label layoutX="50.0" layoutY="125.0" text="Manager's Last Name" />
+      <Button layoutX="311.0" layoutY="204.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Button layoutX="244.0" layoutY="204.0" mnemonicParsing="false" onAction="#onReset" text="Reset" />
+      <TextField fx:id="budget" layoutX="187.0" layoutY="160.0" />
+      <Label layoutX="50.0" layoutY="165.0" text="Budget" />
+    </children>
+</fx:root>
